@@ -1,0 +1,45 @@
+@import url("header&footer.css");
+
+* {
+    box-sizing: border-box;
+}
+
+/* Breve Información y Foto*/
+#informacion {
+    text-align: center;
+}
+
+#informacion img{
+    width: 25%;
+    display:block;
+    margin:auto;
+}
+
+.centrar {
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(135, 135, 241);
+    text-align: center;
+    margin-bottom: 30px;
+    border: black 1px solid;
+}
+
+nav ul {
+    padding-left: 0px;
+}
+
+nav li {
+    display: inline-block;
+    width: 32%;
+}
+
+nav a {
+    color: black;
+    padding: 1%;
+}
+
+#ejercicios a {
+    text-decoration: none;
+}
