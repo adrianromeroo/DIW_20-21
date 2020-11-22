@@ -1,0 +1,23 @@
+/* Cabezera*/
+header {
+    text-align: center;
+    margin-bottom: 50px;
+    color: black;
+    border: black 1px solid;
+    background-color: white;
+    padding-top: 5px;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #12CBC4;
+    text-align: center;
+    margin-top: 20px;
+    border: black 1px solid;
+    padding-top: 5px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}

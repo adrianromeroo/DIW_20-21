@@ -1,0 +1,70 @@
+@import url("../../CSS/header&footer.css");
+
+body {
+  font-family: Calibri,Arial,Helvetica,sans-serif;
+  width: 100%;
+  background-color: #1289A7;
+  margin: 0px;
+}
+
+.margen {
+  margin: 8px;
+}
+
+.titulo {
+  font-family: Cambria,Times,serif;
+  color: #1F497D;
+  background-color: #BFBFBF;
+  font-size: 24px;
+  letter-spacing: 0.5em;
+  word-spacing: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: Cambria,Times,serif;
+  color: #632423;
+  font-size: 18px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+
+li {
+  font-style: italic;
+  font-weight: bold;
+}
+
+strong {
+  font-style: normal;
+  font-variant: small-caps;
+}
+
+.lista {
+  width: 100%;
+}
+
+nav {
+  background-color: #12CBC4;
+  text-align: center;
+  margin-bottom: 30px;
+  border: black 1px solid;
+}
+
+nav ul {
+  padding-left: 0px;
+}
+
+nav li {
+  display: inline-block;
+  width: 31%;
+}
+
+nav a {
+  color: black;
+  padding: 1%;
+}
+
+.lista a {
+  font-size: 15px;
+}

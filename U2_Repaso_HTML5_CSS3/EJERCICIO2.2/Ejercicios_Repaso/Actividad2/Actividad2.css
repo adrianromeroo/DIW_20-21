@@ -1,0 +1,115 @@
+@import url("../../CSS/header&footer.css");
+
+body {
+    background-color: #1289A7;
+    margin: 0px;
+}
+
+.margen {
+    margin: 8px;
+}
+
+div.exampleborderradius {
+    background-color: #eee;
+    padding: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+div.exampleborderradiusa {
+    background-color: #464646;
+    margin-top: 20px;
+    margin-right: 40px;
+    height: 65px;
+    width:160px;
+    text-align: center;
+    border-radius: 0px 0px 43px 0px;
+}
+
+div.exampleborderradiusb {
+    background-color: #464646;
+    margin-top: 20px;
+    margin-right: 40px;
+    height: 65px;
+    width:160px;
+    text-align: center;
+    border-bottom-right-radius:3em 1.5em;
+}
+
+div.exampleborderradiusc {
+    background-color: #464646;
+    margin-top: 20px;
+    margin-right: 40px;
+    height: 65px;
+    width:160px;
+    text-align: center;
+    border-bottom-right-radius:1.5em 3em;
+}
+
+div.exampleborderradiusd {
+    background-color: #464646;
+    margin-top: 20px;
+    margin-right: 40px;
+    width: 12em;
+    height: 5em;
+    text-align: center;
+    border-radius: 30px 200px 30px 200px;
+    clear: both;
+}
+
+div.exampleborderradiuse {
+    background-color: #464646;
+    margin-top: 20px;
+    margin-right: 40px;
+    height: 65px;
+    width:160px;
+    text-align: center;
+    border-bottom-right-radius:1.5em 0.5em;
+    border-bottom-left-radius:0.75em 1.5em;
+    border-top-left-radius:1.5em 0.5em;
+    border-top-right-radius:0.75em 1.5em;
+
+}
+
+div.exampleborderradiusf {
+    background-color: #464646;
+    margin-top: 20px;
+    margin-right: 40px;
+    width: 70px;
+    height: 70px;
+    text-align: center;   
+    border-radius: 50%; 
+}
+
+.examplelabelborderradius {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+}
+
+nav {
+    background-color: #12CBC4;
+    text-align: center;
+    margin-bottom: 30px;
+    border: black 1px solid;
+}
+
+nav ul {
+    padding-left: 0px;
+}
+
+nav li {
+    display: inline-block;
+    width: 32%;
+}
+
+nav a {
+    color: black;
+    padding: 1%;
+}
+
+.lista a {
+    font-size: 15px;
+}

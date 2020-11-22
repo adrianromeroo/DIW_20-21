@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentacion</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $(".boton img").toggle();
+          });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1> Adrian Romero Muñoz </h1>
+            <p> Pagina Web De Presentación </p>
+        </header>
+
+        <div class="margenes">
+
+            <nav class="lista">
+                <ul>
+                    <li>
+                        <a href="#informacion">Info</a>
+                    </li>
+                    <li>
+                        <a href="#modulos">Módulos</a>
+                    </li>
+                    <li>
+                        <a href="#ejercicios">Ejercicios</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="grid">
+
+                <div id="informacion">
+                    <img src="IMG/icono.png">
+                    <p> Soy Adrian Romero Muñoz, tengo 19 años <br>
+                        y actualmente soy estudiante de un CFGS de Desarrollo de Aplicaciones Web <br>
+                    </p>
+                </div>
+
+                <div id="modulos">
+                    <h2> Listado de Módulos: </h2>
+
+                    <table>
+                        <tr>
+                            <th>Módulo</th>
+                            <th>Horas</th>
+                        </tr>
+                        <tr>
+                            <td>Desarrollo web en entorno cliente</td>
+                            <td class="centrar">6</td>
+                        </tr>
+                        <tr>
+                            <td>Desarrollo web en entorno servidor</td>
+                            <td class="centrar">8</td>
+                        </tr>
+                        <tr>
+                            <td>Despliegue de aplicaciones web</td>
+                            <td class="centrar">3</td>
+                        </tr>
+                        <tr>
+                            <td>Diseño de interfaces web</td>
+                            <td class="centrar">6</td>
+                        </tr>
+                        <tr>
+                            <td>Empresa e iniciativa emprendedora</td>
+                            <td class="centrar">4</td>
+                        </tr>
+                        <tr>
+                            <td>Horas de libre configuración</td>
+                            <td class="centrar">3</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="ejercicios">
+                    <h2> Ejercicios de Repaso: </h2>
+                    <ul>
+                        <li><a href="Ejercicios_Repaso/Actividad1/Actividad1.html">Ejercicio 1</a></li>
+                        <li><a href="Ejercicios_Repaso/Actividad2/Actividad2.html">Ejercicio 2</a></li>
+                        <li><a href="Ejercicios_Repaso/Actividad3/Actividad3.html">Ejercicio 3</a></li>
+                        <li><a href="Ejercicios_Repaso/Actividad4/Actividad4.html">Ejercicio 4</a></li>
+                        <li><a href="Ejercicios_Repaso/Actividad5/Actividad5.html">Ejercicio 5</a></li>
+                    </ul>
+                </div>
+
+                <div class="boton">
+                    <button class="button"> Mostrar / Ocultar </button>
+                    <img src="IMG/html.png">
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <a href="https://github.com/adrianromeroo" target="_blank"> GitHub</a> <br>
+            <a href="Filezilla/filezilla.html" id="clear"> FileZilla (FTP) </a>
+        </footer>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad1</title>
+    <style type="text/css">
+
+        @import url("../../CSS/header&footer.css");
+
+        body {
+            background-color: #1289A7;
+            margin: 0px;
+        }
+
+        .margen {
+            margin: 8px;
+        }
+    
+        li:first-child {
+            color: purple;
+        }
+
+        li:nth-child(2) {
+            font-size: 15px;
+        }
+
+        li:nth-of-type(3) {
+            font-size: 20px;
+        }
+
+        li:nth-child(4) {
+            font-size: 25px;
+        }
+
+        .ultimo_hijo {
+            color: purple;
+            font-size: 30px;
+        }
+
+        nav {
+            background-color: #12CBC4;
+            text-align: center;
+            margin-bottom: 30px;
+            border: black 1px solid;
+        }
+
+        nav ul {
+            padding-left: 0px;
+        }
+
+        nav li {
+            display: inline-block;
+            width: 32%;
+        }
+
+        nav a {
+            color: black;
+            padding: 1%;
+        }
+
+        .lista a {
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Adrian Romero Muñoz </h1>
+        <p> Pagina Web De Presentación </p>
+        <p> Ejercicio 1 - Pseudo-Clases </p>
+    </header>
+
+    <div class="margen">
+
+    <nav class="lista">
+        <ul>
+            <li>
+                <a href="../../index.html#informacion">Info</a>
+            </li>
+            <li>
+                <a href="../../index.html#modulos">Módulos</a>
+            </li>
+            <li>
+                <a href="../../index.html#ejercicios">Ejercicios</a>
+            </li>
+        </ul>
+    </nav>
+
+    <ul>
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+        <li>Cuarto</li>
+        <li class="ultimo_hijo">Quinto</li>
+    </ul>
+
+    </div>
+
+    <footer>
+        <a href="https://github.com/adrianromeroo" target="_blank"> GitHub</a>
+        <a href="../../Filezilla/filezilla.html" id="clear">  FileZilla (FTP) </a>
+    </footer>
+
+</body>
+</html>
