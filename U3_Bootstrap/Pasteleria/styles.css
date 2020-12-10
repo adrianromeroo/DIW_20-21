@@ -1,0 +1,38 @@
+.container{
+    width: 100%;
+}
+
+.menu{ 
+    width: 100%;
+    color: #D07EA7;
+    border-bottom: solid 1px black;
+}
+
+.carousel{
+    display: none;
+}
+
+#titulos {
+    border-bottom: solid 1px black; 
+    padding-bottom: 5px; 
+    color: #D07EA7;
+    padding-top: 35px;
+}
+
+#fix {
+    border: 0px;
+}
+
+.boton_carta {
+    background-color: #D07EA7;
+    padding: 18px 54px;
+    border: white;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width:992px){
+    .carousel{
+        display: block;
+    }
+}
+

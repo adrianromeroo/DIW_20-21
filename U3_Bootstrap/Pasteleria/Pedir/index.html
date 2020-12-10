@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Pedidos</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="text-center">
+      <h2 style="color: #D07EA7;"> Pedidos </h2>
+      <h3> Rellene El Formulario Con Los Datos Del Pedido</h3>
+    </div>
+    <form>
+
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="Nombre">Nombre*</label>
+            <div class="col-md-12">
+              <input id="Nombre" name="Nombre" type="text" class="form-control input-md" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="Apellidos">Apellidos*</label>
+            <div class="col-md-12">
+              <input id="Apellidos" name="Apellidos" type="text" class="form-control input-md" required>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="Correo">Provincia*</label>
+            <div class="col-md-12">
+              <input id="Provincia" name="Provincia" type="text" class="form-control input-md" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="Dirrecion">Dirección*</label>
+            <div class="col-md-12">
+              <input id="Dirrecion" name="Dirrecion" type="text" class="form-control input-md" required>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="cp">Codigo Postal*</label>
+            <div class="col-md-12">
+              <input id="cp" name="cp" type="text" class="form-control input-md" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="tel">Número Tlfn*</label>
+            <div class="col-md-12">
+              <input id="tel" name="tel" type="text" class="form-control input-md" required>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-check mb-5">
+        <label class="form-check-label" for="check"> ¿Es usted Mayor de edad?
+          <input class="ml-3 mt-2 form-check-input" type="checkbox" id="check" required>
+        </label>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Seleccione la bebida</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Nada</option>
+                  <option>Agua</option>
+                  <option>Cafe</option>
+                  <option>Coca-Cola</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Seleccione su postre</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Nada</option>
+                  <option>Crepe Azucar</option>
+                  <option>Crepe Nutella</option>
+                  <option>Crepe Dulce de Leche</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h5 class="text-center mt-5"> A domicilio o Recoger en Tienda </h5>
+      <div class="text-center form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optradio" checked> A domicilio
+        </label>
+      </div>
+      <div class="text-center form-check pb-5">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optradio"> Recogida en tienda
+        </label>
+      </div>
+
+      <h4 class="text-center"> Sugerencia Para Añadir a Carta / Detalles de Pedido </h4>
+      <div class="text-center row">
+        <div class="col">
+          <div class="form-group">
+            <div class="col-md-12">
+              <div class="form-group">
+                <textarea rows="8" cols="60" name="comment"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center row">
+        <div class="col">
+          <p><strong>Si desea una tarta a gusto inserte una foto (Coste 10€ -Tamaño Estandar)</strong></p>
+          <div class="form-group">
+            <div class="col-md-12">
+              <input type="file" name="foto">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <button type="submit" class="mt-5 btn btn-outline-secondary">Enviar pedido</button>
+
+  </form>
+
+    <div class="text-center">
+      <button class="boton_carta" onclick="location.href='../index.html'"> Inicio </button>
+    </div>
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
