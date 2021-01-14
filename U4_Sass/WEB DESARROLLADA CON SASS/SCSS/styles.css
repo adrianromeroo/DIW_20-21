@@ -1,0 +1,107 @@
+body {
+  background-color: #72c5b4;
+  margin: 0px;
+}
+
+.container .cabecera {
+  display: flex;
+  border: 1px solid black;
+}
+.container .cabecera .p1 {
+  padding-left: 3px;
+}
+.container .cabecera .p2 {
+  padding-left: 10px;
+}
+.container .cabecera .p3 {
+  padding-left: 130px;
+}
+.container .banner img {
+  width: 100%;
+}
+.container .menu {
+  background-color: #16A085;
+  text-align: center;
+  border: black 1px solid;
+}
+.container .menu ul {
+  padding-left: 0px;
+}
+.container .menu ul li {
+  display: inline-block;
+  width: 24%;
+}
+.container .menu ul li a {
+  color: black;
+  padding: 1%;
+}
+.container .menu ul li {
+  display: inline-block;
+  width: 24%;
+}
+.container .menu ul li a {
+  color: black;
+  padding: 1%;
+}
+.container .menu ul li {
+  display: inline-block;
+  width: 24%;
+}
+.container .menu ul li a {
+  color: black;
+  padding: 1%;
+}
+.container .menu ul li {
+  display: inline-block;
+  width: 24%;
+}
+.container .menu ul li a {
+  color: black;
+  padding: 1%;
+}
+.container .servicios h3 {
+  text-align: center;
+}
+.container .servicios div img {
+  width: 100%;
+}
+.container .servicios div img {
+  width: 100%;
+}
+.container .servicios div img {
+  width: 100%;
+}
+.container .servicios div img {
+  width: 100%;
+}
+.container .entorno h3 {
+  text-align: center;
+}
+.container .nosotros h3 {
+  text-align: center;
+}
+.container .nosotros p {
+  text-align: center;
+}
+.container .historia h3 {
+  text-align: center;
+}
+.container .historia div div p {
+  text-align: center;
+}
+.container .historia div div img {
+  text-align: center;
+}
+.container .historia div div p {
+  text-align: center;
+}
+.container footer {
+  background-color: #16A085;
+  border: 1px solid black;
+}
+.container footer p {
+  text-align: right;
+  padding-right: 3px;
+}
+
+/*# sourceMappingURL=styles.css.map */

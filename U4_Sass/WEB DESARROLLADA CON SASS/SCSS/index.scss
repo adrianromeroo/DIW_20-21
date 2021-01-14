@@ -1,0 +1,253 @@
+//Variables
+$color-letra: black;
+$color-header: #16A085;
+$color-footer: #16A085;
+$color-menu: #16A085;
+$bg-color: #72c5b4;
+$breakpoints: (
+    "pequeño" : 576px,
+    "mediano" : 768px,
+    "grande" : 992px
+);
+$width: 100%;
+$width-servicios: 80%;
+$centrar: center;
+$izq: left;
+$derech: right;
+
+
+
+body {
+    background-color: $bg-color;
+    margin: 0px;
+}
+
+.container {
+    
+    .cabecera {
+        display: flex;
+        border: 1px solid black;
+        .p1 {
+            padding-left: 3px;
+        }
+
+        .p2 {
+            padding-left: 10px;
+        }
+
+        .p3 {
+            padding-left: 130px;
+        }
+
+    }
+
+    .banner {
+
+        img {
+            width: $width;
+        }
+
+    }
+
+    .menu {
+        background-color: $color-menu;
+        text-align: center;
+        border: black 1px solid;
+
+        ul {
+            padding-left: 0px;
+
+            li {
+                display: inline-block;
+                width: 24%;
+
+                a {
+                    color: black;
+                    padding: 1%;
+
+                }
+            }
+
+            li {
+                display: inline-block;
+                width: 24%;
+
+                a {
+                    color: black;
+                    padding: 1%;
+
+                }
+            }
+
+            li {
+                display: inline-block;
+                width: 24%;
+
+                a {
+                    color: black;
+                    padding: 1%;
+
+                }
+            }
+
+            li {
+                display: inline-block;
+                width: 24%;
+
+                a {
+                    color: black;
+                    padding: 1%;
+
+                }
+            }
+
+        }
+    }
+
+    .servicios {
+
+        h3 {
+            text-align: $centrar;
+        }
+
+        div {
+
+            img {
+                width: $width;
+            }
+
+            h3{
+
+            }
+
+        }
+
+        div {
+
+            img {
+                width: $width;
+            }
+
+            h3{
+
+            }
+            
+        }
+
+        div {
+
+            img {
+                width: $width;
+            }
+
+            h3{
+
+            }
+            
+        }
+
+        div {
+
+            img {
+                width: $width;
+            }
+
+            h3{
+
+            }
+            
+        }
+    }
+
+    .entorno {
+
+        h3 {
+            text-align: $centrar;
+        }
+
+        div {
+
+            img {
+
+            }
+
+        }
+
+        div {
+
+            img {
+
+            }
+            
+        }
+
+        div {
+
+            img {
+
+            }
+            
+        }
+
+        div {
+
+            img {
+
+            }
+            
+        }
+    }
+
+    .nosotros {
+
+        h3 {
+            text-align: $centrar;
+        }
+
+        p {
+            text-align: $centrar;
+        }
+    }
+
+    .historia {
+
+        h3 {
+            text-align: $centrar;
+        }
+
+        div {
+
+            div {
+
+                p {
+                    text-align: $centrar;
+                }
+            }
+            
+
+            div {
+
+                img {
+                    text-align: $centrar;
+                }
+            }
+
+            div {
+
+                p {
+                    text-align: $centrar;
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: $color-footer;
+        border: 1px solid black;
+        p {
+            text-align: $derech;
+            padding-right: 3px;
+        }
+    }
+
+}
