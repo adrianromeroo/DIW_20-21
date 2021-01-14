@@ -1,0 +1,7 @@
+@function calcularAnchura($breakpoint){
+    @if $breakpoint == $tablet{
+        @return $width + 0%;
+    } @else if $breakpoint == $ordenador {
+        @return $width + 0%;
+    }
+}

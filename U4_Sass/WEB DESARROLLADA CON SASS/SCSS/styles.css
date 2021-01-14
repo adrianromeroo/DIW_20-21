@@ -3,18 +3,25 @@ body {
   margin: 0px;
 }
 
+.container {
+  width: 100%;
+}
 .container .cabecera {
   display: flex;
   border: 1px solid black;
+  background-color: #16A085;
 }
 .container .cabecera .p1 {
   padding-left: 3px;
+  font-size: 2.5vw;
 }
 .container .cabecera .p2 {
   padding-left: 10px;
+  font-size: 2.5vw;
 }
 .container .cabecera .p3 {
-  padding-left: 130px;
+  font-size: 2.5vw;
+  padding-left: 75px;
 }
 .container .banner img {
   width: 100%;
@@ -62,17 +69,44 @@ body {
 .container .servicios h3 {
   text-align: center;
 }
-.container .servicios div img {
-  width: 100%;
+.container .servicios .acabado img {
+  width: 75%;
+  display: block;
+  margin: auto;
+  border: 1px solid black;
 }
-.container .servicios div img {
-  width: 100%;
+.container .servicios .acabado h3 {
+  margin-bottom: 8%;
 }
-.container .servicios div img {
-  width: 100%;
+.container .servicios .impresion img {
+  width: 75%;
+  display: block;
+  margin: auto;
+  border: 1px solid black;
 }
-.container .servicios div img {
-  width: 100%;
+.container .servicios .impresion h3 {
+  margin-bottom: 8%;
+}
+.container .servicios .manipulado img {
+  width: 75%;
+  display: block;
+  margin: auto;
+  border: 1px solid black;
+}
+.container .servicios .manipulado h3 {
+  margin-bottom: 8%;
+}
+.container .servicios .preimpresion img {
+  width: 75%;
+  display: block;
+  margin: auto;
+  border: 1px solid black;
+}
+.container .servicios .preimpresion h3 {
+  margin-bottom: 15%;
+}
+.container .entorno {
+  display: none;
 }
 .container .entorno h3 {
   text-align: center;
@@ -82,18 +116,26 @@ body {
 }
 .container .nosotros p {
   text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 .container .historia h3 {
   text-align: center;
 }
 .container .historia div div p {
   text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 .container .historia div div img {
-  text-align: center;
+  display: block;
+  margin: auto;
+  border: 1px solid black;
 }
 .container .historia div div p {
   text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 .container footer {
   background-color: #16A085;
@@ -102,6 +144,195 @@ body {
 .container footer p {
   text-align: right;
   padding-right: 3px;
+  font-size: 2.5vw;
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    width: 100%;
+  }
+  .container .cabecera {
+    display: flex;
+    border: 1px solid black;
+    background-color: #16A085;
+  }
+  .container .cabecera .p1 {
+    padding-left: 3px;
+    font-size: 2vw;
+  }
+  .container .cabecera .p2 {
+    padding-left: 10px;
+    font-size: 2vw;
+  }
+  .container .cabecera .p3 {
+    padding-left: 200px;
+    font-size: 2vw;
+  }
+  .container .banner img {
+    width: 100%;
+  }
+  .container .menu {
+    background-color: #16A085;
+    text-align: center;
+    border: black 1px solid;
+  }
+  .container .menu ul {
+    padding-left: 0px;
+  }
+  .container .menu ul li {
+    display: inline-block;
+    width: 24%;
+  }
+  .container .menu ul li a {
+    color: black;
+    padding: 1%;
+  }
+  .container .menu ul li {
+    display: inline-block;
+    width: 24%;
+  }
+  .container .menu ul li a {
+    color: black;
+    padding: 1%;
+  }
+  .container .menu ul li {
+    display: inline-block;
+    width: 24%;
+  }
+  .container .menu ul li a {
+    color: black;
+    padding: 1%;
+  }
+  .container .menu ul li {
+    display: inline-block;
+    width: 24%;
+  }
+  .container .menu ul li a {
+    color: black;
+    padding: 1%;
+  }
+  .container .servicios {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80px 250px 250px;
+  }
+  .container .servicios h3 {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-top: 20px;
+  }
+  .container .servicios .acabado {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .container .servicios .acabado img {
+    width: 75%;
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    height: 166.5px;
+  }
+  .container .servicios .acabado h3 {
+    margin-bottom: 8%;
+    padding-top: 0px;
+  }
+  .container .servicios .impresion {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .container .servicios .impresion img {
+    width: 75%;
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    height: 166.5px;
+  }
+  .container .servicios .impresion h3 {
+    margin-bottom: 8%;
+    padding-top: 0px;
+  }
+  .container .servicios .manipulado {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .container .servicios .manipulado img {
+    width: 75%;
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    height: 166.5px;
+  }
+  .container .servicios .manipulado h3 {
+    margin-bottom: 8%;
+    padding-top: 0px;
+  }
+  .container .servicios .preimpresion {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .container .servicios .preimpresion img {
+    width: 75%;
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    height: 166.5px;
+  }
+  .container .servicios .preimpresion h3 {
+    margin-bottom: 15%;
+    padding-top: 0px;
+  }
+  .container .entorno {
+    display: none;
+  }
+  .container .entorno h3 {
+    text-align: center;
+  }
+  .container .nosotros h3 {
+    text-align: center;
+  }
+  .container .nosotros p {
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .container .historia h3 {
+    text-align: center;
+  }
+  .container .historia div div p {
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .container .historia div div img {
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+  }
+  .container .historia div div p {
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .container footer {
+    background-color: #16A085;
+    border: 1px solid black;
+  }
+  .container footer p {
+    text-align: right;
+    padding-right: 3px;
+    font-size: 2vw;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
