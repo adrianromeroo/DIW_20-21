@@ -1,25 +1,74 @@
-//Variables
-//Paleta de Colores
+////@access public
+////@author Adrian
+
+///Color Letra
+///@group colores
 $color-letra: black;
+
+///Color Fondo Del Header
+///@group colores
 $color-header: #16A085;
+
+///Color Fondo del Footer
+///@group colores
 $color-footer: #16A085;
+
+///Color Fondo del Menu
+///@group colores
 $color-menu: #16A085;
+
+///Color Fondo de la Pagina
+///@group colores
 $bg-color: #72c5b4;
-$hover-menu: white;
+
+///Colores Principales (1)
+///@group colores
 $color-ppa-1: white;
+
+///Colores Principales (2)
+///@group colores
 $color-ppa-2: rgb(231, 6, 111);
+
+///Colores Principales (3)
+///@group colores
 $color-ppa-3: rgb(22, 95, 206);
+
+///Colores Principales (4)
+///@group colores
 $color-ppa-4: yellow;
 
-//Tamaños Breakpoints
+///Interpolacion Color Fondo
+///@group interpolacion
+$fondo: #72c5b4;
+
+///Interpolacion En Comentarios
+///@group interpolacion
+$autor: "Adrian Romero Muñoz";
+
+///Punto de Ruptura Tablet
+///@group breakpoints
 $tablet: 576px;
+
+///Punto de Ruptura Ordenador
+///@group breakpoints
 $ordenador: 992px;
 
-//Tamaños
+///Tamaño anchura caja
+///@group tamano
 $width: 100%;
+
+///Tamaño anchura foto
+///@group tamano
 $tamano-img-movil: 75%;
 
-//Posicionamiento
+///Posicionamiento Centro
+///@group posicion
 $centrar: center;
+
+///Posicionamiento Izquierda
+///@group posicion
 $izq: left;
+
+///Posicionamiento Derecho
+///@group posicion
 $derech: right;

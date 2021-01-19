@@ -1,0 +1,35 @@
+@import "variables.scss";
+@import "funciones.scss";
+
+footer {
+    /* Pie de página */
+    background-color: $color-footer;
+    border: 1px solid black;
+    p {
+        text-align: $derech;
+        padding-right: 3px;
+        font-size: 11px;
+    }
+}
+
+/* Breakpoint Para Tablet */
+@media screen and (min-width: 576px) {
+
+    /* Pie de página */
+    footer {
+        p {
+            font-size: 13px;
+        }
+    }
+}
+
+/* Breakpoint para Pantalla */
+@media screen and (min-width: 992px) {
+
+    /* Pie de página */
+    footer {
+        p {
+            font-size: 15px;
+        }
+    }
+}

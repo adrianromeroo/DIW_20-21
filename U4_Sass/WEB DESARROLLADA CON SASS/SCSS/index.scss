@@ -1,95 +1,30 @@
 @import "variables.scss";
 @import "funciones.scss";
+@import "cabecera.scss";
+@import "footer.scss";
+@import "menu.scss";
+@import "mixins.scss";
 
+/*
+
+    Web desarrollada por #{$autor}
+
+*/
 
 body {
-    background-color: $bg-color;
-    margin: 0px;
+    /* Interpolacion color de fondo */
+    background-color: #{$fondo};
+    @include centrar_bloque;
 }
 
 .container {
+    /* Contenedor Principal */
     width: $width;
-    
-    //Cabecera
-    .cabecera {
-        display: flex;
-        justify-content: space-between;
-        border: 1px solid black;
-        background-color: $color-header;
-        .p1 {
-            font-size: 11px;
-            padding-left: 5px;
-        }
 
-        .p2 {
-            font-size: 11px;
-        }
-
-        .p3 {
-            font-size: 11px;
-            padding-right: 5px;
-        }
-
-    }
-
-    //Imagen Principal
     .banner {
-
         img {
+            //Imagen Principal
             width: $width;
-        }
-
-    }
-
-    //Menú
-    .menu {
-        background-color: $color-menu;
-        text-align: center;
-        border: black 1px solid;
-
-        ul {
-            padding-left: 0px;
-
-            .li1 {
-                display: inline-block;
-                width: 24%;
-
-                a {
-                    color: $color-ppa-1;
-                    padding: 1%;
-                }
-            }
-
-            .li2 {
-                display: inline-block;
-                width: 24%;
-
-                a {
-                    color: $color-ppa-2;
-                    padding: 1%;
-                }
-            }
-
-            .li3 {
-                display: inline-block;
-                width: 24%;
-
-                a {
-                    color: $color-ppa-3;
-                    padding: 1%;
-                }
-            }
-
-            .li4 {
-                display: inline-block;
-                width: 24%;
-
-                a {
-                    color: $color-ppa-4;
-                    padding: 1%;
-                }
-            }
-
         }
     }
 
@@ -97,7 +32,7 @@ body {
     .servicios {
 
         h3 {
-            text-align: $centrar;
+            @include centrar_elemento_linea;
         }
 
         .acabado {
@@ -129,7 +64,7 @@ body {
             }
             
         }
-
+        
         .manipulado {
 
             img {
@@ -161,8 +96,8 @@ body {
         }
     }
 
-    //Seccion de Entorno de Trabajo
     .entorno {
+        /* Seccion de Entorno de Trabajo */
         display: none;
 
         h3 {
@@ -230,8 +165,9 @@ body {
         }
     }
 
-    //Seccion Nosotros
     .nosotros {
+        /* Seccion de Nosotros */
+        width: $width;
 
         h3 {
             text-align: $centrar;
@@ -244,8 +180,9 @@ body {
         }
     }
 
-    //Sección Historia Empresa
     .historia {
+        /* Seccion Historia de la Empresa */
+        width: $width;
 
         h3 {
             text-align: $centrar;
@@ -261,7 +198,6 @@ body {
                     margin-right: 30px;
                 }
             }
-            
 
             div {
 
@@ -282,54 +218,18 @@ body {
             }
         }
     }
-
-    //Pie de Página
-    footer {
-        background-color: $color-footer;
-        border: 1px solid black;
-        p {
-            text-align: $derech;
-            padding-right: 3px;
-            font-size: 11px;
-        }
-    }
-
 }
 
 
 
-
-
-//Breakpoint Tablet
+/* Breakpoint Para Tablet */
 @media screen and (min-width: 576px) {
 
     .container {
         width: calcularAnchura($tablet);
-        
-        //Cabecera
-        .cabecera {
-            display: flex;
-            justify-content: space-between;
-            border: 1px solid black;
-            background-color: $color-header;
-            .p1 {
-                font-size: 13px;
-                padding-left: 5px;
-            }
     
-            .p2 {
-                font-size: 13px;
-            }
-    
-            .p3 {
-                font-size: 13px;
-                padding-right: 5px;
-            }
-    
-        }
-    
-        //Seccion de Servicios
         .servicios {
+            /* Seccion de Servicios */
             display: grid;
             grid-template-columns: 50% 50%;
             grid-template-rows: 80px 250px 250px;
@@ -427,53 +327,19 @@ body {
                 
             }
         }
-    
-        //Pie de Página
-        footer {
-            background-color: $color-footer;
-            border: 1px solid black;
-            p {
-                text-align: $derech;
-                padding-right: 3px;
-                font-size: 13px;
-            }
-        }
     }
-
 }
 
 
 
-//Breakpoint Pantalla
+/* Breakpoint para Pantalla */
 @media screen and (min-width: 992px) {
 
     .container {
         width: calcularAnchura($ordenador);
-        
-        //Cabecera
-        .cabecera {
-            display: flex;
-            justify-content: space-between;
-            border: 1px solid black;
-            background-color: $color-header;
-            .p1 {
-                font-size: 15px;
-                padding-left: 5px;
-            }
     
-            .p2 {
-                font-size: 15px;
-            }
-    
-            .p3 {
-                font-size: 15px;
-                padding-right: 5px;
-            }
-    
-        }
-    
-        //Seccion de Servicios
         .servicios {
+            /* Seccion de Servicios */
             display: grid;
             grid-template-columns: 25% 25% 25% 25%;
             grid-template-rows: 80px 225px;
@@ -571,9 +437,9 @@ body {
                 
             }
         }
-    
-        //Seccion de Entorno de Trabajo
+
         .entorno {
+            /* Seccion de Entorno de Trabajo */
             display: grid;
             grid-template-columns: 25% 25% 25% 25%;
             grid-template-rows: 80px 225px;
@@ -672,8 +538,8 @@ body {
             }
         }
     
-        //Seccion Nosotros
         .nosotros {
+            /* Seccion Nosotros */
             display: block;
             margin: auto;
             width: 80%;
@@ -690,8 +556,9 @@ body {
             }
         }
     
-        //Sección Historia Empresa
         .historia {
+            /* Sección Historia Empresa */
+            width: $width;
     
             h3 {
                 text-align: $centrar;
@@ -746,17 +613,5 @@ body {
                 }
             }
         }
-    
-        //Pie de Página
-        footer {
-            background-color: $color-footer;
-            border: 1px solid black;
-            p {
-                text-align: $derech;
-                padding-right: 3px;
-                font-size: 15px;
-            }
-        }
     }
-
 }

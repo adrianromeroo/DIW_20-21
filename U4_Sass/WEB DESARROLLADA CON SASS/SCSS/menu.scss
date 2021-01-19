@@ -1,0 +1,54 @@
+@import "variables.scss";
+@import "funciones.scss";
+
+.menu {
+    /* Menú Navegable*/
+    background-color: $color-menu;
+    text-align: center;
+    border: black 1px solid;
+
+    ul {
+        padding-left: 0px;
+
+        .li1 {
+            display: inline-block;
+            width: 24%;
+
+            a {
+                color: $color-ppa-1;
+                padding: 1%;
+            }
+        }
+
+        .li2 {
+            display: inline-block;
+            width: 24%;
+
+            a {
+                color: $color-ppa-2;
+                padding: 1%;
+            }
+        }
+
+        .li3 {
+            display: inline-block;
+            width: 24%;
+
+            a {
+                color: $color-ppa-3;
+                padding: 1%;
+            }
+        }
+
+        .li4 {
+            display: inline-block;
+            width: 24%;
+
+            a {
+                color: $color-ppa-4;
+                padding: 1%;
+            }
+        }
+
+    }
+}

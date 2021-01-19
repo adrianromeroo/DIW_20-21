@@ -1,56 +1,95 @@
+@charset "UTF-8";
+footer {
+  /* Pie de página */
+  background-color: #16A085;
+  border: 1px solid black;
+}
+footer p {
+  text-align: right;
+  padding-right: 3px;
+  font-size: 11px;
+}
+
+/* Breakpoint Para Tablet */
+@media screen and (min-width: 576px) {
+  /* Pie de página */
+  footer p {
+    font-size: 13px;
+  }
+}
+/* Breakpoint para Pantalla */
+@media screen and (min-width: 992px) {
+  /* Pie de página */
+  footer p {
+    font-size: 15px;
+  }
+}
+.menu {
+  /* Menú Navegable*/
+  background-color: #16A085;
+  text-align: center;
+  border: black 1px solid;
+}
+.menu ul {
+  padding-left: 0px;
+}
+.menu ul .li1 {
+  display: inline-block;
+  width: 24%;
+}
+.menu ul .li1 a {
+  color: white;
+  padding: 1%;
+}
+.menu ul .li2 {
+  display: inline-block;
+  width: 24%;
+}
+.menu ul .li2 a {
+  color: #e7066f;
+  padding: 1%;
+}
+.menu ul .li3 {
+  display: inline-block;
+  width: 24%;
+}
+.menu ul .li3 a {
+  color: #165fce;
+  padding: 1%;
+}
+.menu ul .li4 {
+  display: inline-block;
+  width: 24%;
+}
+.menu ul .li4 a {
+  color: yellow;
+  padding: 1%;
+}
+
+/*
+
+    Web desarrollada por Adrian Romero Muñoz
+
+*/
 body {
+  /* Cuerpo de la página web */
   background-color: #72c5b4;
-  margin: 0px;
+  margin: 0px auto;
 }
 
 .container {
+  /* Contenedor Principal */
   width: 100%;
 }
 .container .banner img {
   width: 100%;
 }
-.container .menu {
-  background-color: #16A085;
-  text-align: center;
-  border: black 1px solid;
-}
-.container .menu ul {
-  padding-left: 0px;
-}
-.container .menu ul .li1 {
-  display: inline-block;
-  width: 24%;
-}
-.container .menu ul .li1 a {
-  color: white;
-  padding: 1%;
-}
-.container .menu ul .li2 {
-  display: inline-block;
-  width: 24%;
-}
-.container .menu ul .li2 a {
-  color: #e7066f;
-  padding: 1%;
-}
-.container .menu ul .li3 {
-  display: inline-block;
-  width: 24%;
-}
-.container .menu ul .li3 a {
-  color: #165fce;
-  padding: 1%;
-}
-.container .menu ul .li4 {
-  display: inline-block;
-  width: 24%;
-}
-.container .menu ul .li4 a {
-  color: yellow;
-  padding: 1%;
-}
 .container .iframe {
+  /* Iframe de la localizacion de la empresa */
   width: 100%;
+}
+.container .grid {
+  /* Grid para distribuir los elementos de contacto */
 }
 .container .grid .direccion {
   margin-top: 10px;
@@ -64,21 +103,15 @@ body {
   margin-top: 40px;
   text-align: center;
 }
-.container footer {
-  background-color: #16A085;
-  border: 1px solid black;
-}
-.container footer p {
-  text-align: right;
-  padding-right: 3px;
-  font-size: 10px;
-}
 
+/* Breakpoint de Tablet */
 @media screen and (min-width: 576px) {
   .container {
+    /* Contenedor principal */
     width: 100%;
   }
   .container .grid {
+    /* Grid para distribuir los elementos de contacto */
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 300px 250px;
@@ -89,11 +122,9 @@ body {
     grid-row-start: 1;
     grid-row-end: 2;
     margin-top: 40px;
-    text-align: center;
   }
   .container .grid .telefono {
     margin-top: 40px;
-    text-align: center;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -105,69 +136,16 @@ body {
     grid-row-start: 2;
     grid-row-end: 3;
     margin-top: 20px;
-    text-align: center;
-  }
-  .container footer {
-    background-color: #16A085;
-    border: 1px solid black;
-  }
-  .container footer p {
-    text-align: right;
-    padding-right: 3px;
-    font-size: 12px;
   }
 }
+/* Breakpoint de Ordenador */
 @media screen and (min-width: 992px) {
   .container {
-    width: 100%;
-  }
-  .container .banner img {
-    width: 100%;
-  }
-  .container .menu {
-    background-color: #16A085;
-    text-align: center;
-    border: black 1px solid;
-  }
-  .container .menu ul {
-    padding-left: 0px;
-  }
-  .container .menu ul .li1 {
-    display: inline-block;
-    width: 24%;
-  }
-  .container .menu ul .li1 a {
-    color: white;
-    padding: 1%;
-  }
-  .container .menu ul .li2 {
-    display: inline-block;
-    width: 24%;
-  }
-  .container .menu ul .li2 a {
-    color: #e7066f;
-    padding: 1%;
-  }
-  .container .menu ul .li3 {
-    display: inline-block;
-    width: 24%;
-  }
-  .container .menu ul .li3 a {
-    color: #165fce;
-    padding: 1%;
-  }
-  .container .menu ul .li4 {
-    display: inline-block;
-    width: 24%;
-  }
-  .container .menu ul .li4 a {
-    color: yellow;
-    padding: 1%;
-  }
-  .container .iframe {
+    /* Contenedor principal */
     width: 100%;
   }
   .container .grid {
+    /* Grid para distribuir los elementos de contacto */
     display: grid;
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: 300px;
@@ -178,11 +156,9 @@ body {
     grid-row-start: 1;
     grid-row-end: 2;
     margin-top: 40px;
-    text-align: center;
   }
   .container .grid .telefono {
     margin-top: 40px;
-    text-align: center;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -194,16 +170,6 @@ body {
     grid-row-start: 1;
     grid-row-end: 2;
     margin-top: 40px;
-    text-align: center;
-  }
-  .container footer {
-    background-color: #16A085;
-    border: 1px solid black;
-  }
-  .container footer p {
-    text-align: right;
-    padding-right: 3px;
-    font-size: 14px;
   }
 }
 

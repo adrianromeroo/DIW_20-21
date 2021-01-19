@@ -1,53 +1,93 @@
-body {
-  background-color: #72c5b4;
-  margin: 0px;
+@charset "UTF-8";
+footer {
+  /* Pie de página */
+  background-color: #16A085;
+  border: 1px solid black;
+}
+footer p {
+  text-align: right;
+  padding-right: 3px;
+  font-size: 11px;
 }
 
-.container {
-  width: 100%;
+/* Breakpoint Para Tablet */
+@media screen and (min-width: 576px) {
+  /* Pie de página */
+  footer p {
+    font-size: 13px;
+  }
 }
-.container .banner img {
-  width: 100%;
+/* Breakpoint para Pantalla */
+@media screen and (min-width: 992px) {
+  /* Pie de página */
+  footer p {
+    font-size: 15px;
+  }
 }
-.container .menu {
+.menu {
+  /* Menú Navegable*/
   background-color: #16A085;
   text-align: center;
   border: black 1px solid;
 }
-.container .menu ul {
+.menu ul {
   padding-left: 0px;
 }
-.container .menu ul .li1 {
+.menu ul .li1 {
   display: inline-block;
   width: 24%;
 }
-.container .menu ul .li1 a {
+.menu ul .li1 a {
   color: white;
   padding: 1%;
 }
-.container .menu ul .li2 {
+.menu ul .li2 {
   display: inline-block;
   width: 24%;
 }
-.container .menu ul .li2 a {
+.menu ul .li2 a {
   color: #e7066f;
   padding: 1%;
 }
-.container .menu ul .li3 {
+.menu ul .li3 {
   display: inline-block;
   width: 24%;
 }
-.container .menu ul .li3 a {
+.menu ul .li3 a {
   color: #165fce;
   padding: 1%;
 }
-.container .menu ul .li4 {
+.menu ul .li4 {
   display: inline-block;
   width: 24%;
 }
-.container .menu ul .li4 a {
+.menu ul .li4 a {
   color: yellow;
   padding: 1%;
+}
+
+/*
+
+    Web desarrollada por Adrian Romero Muñoz
+
+*/
+body {
+  /* Cuerpo del HTML */
+  background-color: #72c5b4;
+  margin: 0px auto;
+}
+
+.container {
+  /* Contenedor Principal */
+  width: 100%;
+}
+.container .banner img {
+  /* Imagen Principal */
+  width: 100%;
+}
+.container .categoria1 {
+  /* Primera Categoria de Productos */
+  text-align: center;
 }
 .container .categoria1 h2 {
   text-align: center;
@@ -101,6 +141,7 @@ body {
   border: 1px solid black;
 }
 .container .categoria2 {
+  /* Segunda Categoria de Productos */
   text-align: center;
 }
 .container .categoria2 h2 {
@@ -149,18 +190,11 @@ body {
   margin: auto;
   border: 1px solid black;
 }
-.container footer {
-  background-color: #16A085;
-  border: 1px solid black;
-}
-.container footer p {
-  text-align: right;
-  padding-right: 3px;
-  font-size: 10px;
-}
 
+/* Breakpoint para Tablet */
 @media screen and (min-width: 576px) {
   .categoria1 {
+    /* Primera Categoria de Productos */
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 80px 550px 520px;
@@ -223,6 +257,7 @@ body {
   }
 
   .categoria2 {
+    /* Segunda Categoria de Productos */
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 80px 550px 600px;
@@ -283,19 +318,11 @@ body {
     margin: auto;
     border: 1px solid black;
   }
-
-  footer {
-    background-color: #16A085;
-    border: 1px solid black;
-  }
-  footer p {
-    text-align: right;
-    padding-right: 3px;
-    font-size: 12px;
-  }
 }
+/* Breakpoint para Pantalla */
 @media screen and (min-width: 992px) {
   .categoria1 {
+    /* Primera Categoria de Productos */
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 80px 370px;
@@ -358,6 +385,7 @@ body {
   }
 
   .categoria2 {
+    /* Segunda Categoria de Productos */
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 80px 400px;
@@ -417,16 +445,6 @@ body {
     display: block;
     margin: auto;
     border: 1px solid black;
-  }
-
-  footer {
-    background-color: #16A085;
-    border: 1px solid black;
-  }
-  footer p {
-    text-align: right;
-    padding-right: 3px;
-    font-size: 14px;
   }
 }
 

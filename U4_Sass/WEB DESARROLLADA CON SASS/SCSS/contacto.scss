@@ -1,178 +1,99 @@
 @import "variables.scss";
+@import "funciones.scss";
+@import "footer.scss";
+@import "menu.scss";
+@import "mixins.scss";
+
+/*
+
+    Web desarrollada por #{$autor}
+
+*/
 
 body {
+    /* Cuerpo de la página web */
     background-color: $bg-color;
-    margin: 0px;
+    @include centrar_bloque;
 }
 
 .container {
+    /* Contenedor Principal */
     width: $width;
 
     .banner {
+        //Imagen principal de la página
         img {
             width: $width;
         }
     }
 
-    .menu {
-        background-color: $color-menu;
-        text-align: center;
-        border: black 1px solid;
-
-        ul {
-            padding-left: 0px;
-
-            .li1 {
-                display: inline-block;
-                width: 24%;
-                a {
-                    color: $color-ppa-1;
-                    padding: 1%;
-                }
-            }
-
-            .li2 {
-                display: inline-block;
-                width: 24%;
-                a {
-                    color: $color-ppa-2;
-                    padding: 1%;
-                }
-            }
-
-            .li3 {
-                display: inline-block;
-                width: 24%;
-                a {
-                    color: $color-ppa-3;
-                    padding: 1%;
-                }
-            }
-
-            .li4 {
-                display: inline-block;
-                width: 24%;
-                a {
-                    color: $color-ppa-4;
-                    padding: 1%;
-                }
-            }
-        }
-
-    }
-
     .iframe {
+        /* Iframe de la localizacion de la empresa */
         width: $width;
     }
 
     .grid {
+        /* Grid para distribuir los elementos de contacto */
+
+        //Bloque dirección
         .direccion {
             margin-top: 10px;
-            text-align: $centrar;
-            h4 {
-    
-            }
-            p {
-    
-            }
-            p {
-    
-            }
-            p {
-    
-            }
+            @include centrar_elemento_linea;
         }
     
+        //Bloque teléfono
         .telefono {
             margin-top: 40px;
-            text-align: $centrar;
-            h4 {
-    
-            }
-            p {
-    
-            }
-            p {
-    
-            }
+            @include centrar_elemento_linea;
         }
     
+        //Bloque email
         .email {
             margin-top: 40px;
-            text-align: $centrar;
-            h4 {
-    
-            }
-            p {
-    
-            }
-        }
-    }
-
-    //Pie de Página
-    footer {
-        background-color: $color-footer;
-        border: 1px solid black;
-        p {
-            text-align: $derech;
-            padding-right: 3px;
-            font-size: 10px;
+            @include centrar_elemento_linea;
         }
     }
 }
 
 
 
-
-
-
-
-
-//Breakpoint Tablet
+/* Breakpoint de Tablet */
 @media screen and (min-width: 576px) {
     .container {
+        /* Contenedor principal */
         width: $width;
     
         .grid {
+            /* Grid para distribuir los elementos de contacto */
             display: grid;
             grid-template-columns: 50% 50%;
             grid-template-rows: 300px 250px;
+
+            //Bloque direccion
             .direccion {
                 grid-column-start: 1;
                 grid-column-end: 2;
                 grid-row-start: 1;
                 grid-row-end: 2;
                 margin-top: 40px;
-                text-align: $centrar;
             }
         
+            //Bloque telefono
             .telefono {
                 margin-top: 40px;
-                text-align: $centrar;
                 grid-column-start: 2;
                 grid-column-end: 3;
                 grid-row-start: 1;
                 grid-row-end: 2;              
             }
         
+            //Bloque email
             .email {
                 grid-column-start: 1;
                 grid-column-end: 3;
                 grid-row-start: 2;
                 grid-row-end: 3;
                 margin-top: 20px;
-                text-align: $centrar;
-            }
-        }
-    
-        //Pie de Página
-        footer {
-            background-color: $color-footer;
-            border: 1px solid black;
-            p {
-                text-align: $derech;
-                padding-right: 3px;
-                font-size: 12px;
             }
         }
     }
@@ -180,111 +101,43 @@ body {
 
 
 
-
-
-
-//Breakpoint Ordenador
+/* Breakpoint de Ordenador */
 @media screen and (min-width: 992px) {
     .container {
+        /* Contenedor principal */
         width: $width;
     
-        .banner {
-            img {
-                width: $width;
-            }
-        }
-    
-        .menu {
-            background-color: $color-menu;
-            text-align: center;
-            border: black 1px solid;
-    
-            ul {
-                padding-left: 0px;
-    
-                .li1 {
-                    display: inline-block;
-                    width: 24%;
-                    a {
-                        color: $color-ppa-1;
-                        padding: 1%;
-                    }
-                }
-    
-                .li2 {
-                    display: inline-block;
-                    width: 24%;
-                    a {
-                        color: $color-ppa-2;
-                        padding: 1%;
-                    }
-                }
-    
-                .li3 {
-                    display: inline-block;
-                    width: 24%;
-                    a {
-                        color: $color-ppa-3;
-                        padding: 1%;
-                    }
-                }
-    
-                .li4 {
-                    display: inline-block;
-                    width: 24%;
-                    a {
-                        color: $color-ppa-4;
-                        padding: 1%;
-                    }
-                }
-            }
-    
-        }
-    
-        .iframe {
-            width: $width;
-        }
-    
         .grid {
+            /* Grid para distribuir los elementos de contacto */
             display: grid;
             grid-template-columns: repeat(3, 33%);
             grid-template-rows: 300px;
+
+            //Bloque direccion
             .direccion {
                 grid-column-start: 1;
                 grid-column-end: 2;
                 grid-row-start: 1;
                 grid-row-end: 2;
                 margin-top: 40px;
-                text-align: $centrar;
             }
         
+            //Bloque telefono
             .telefono {
                 margin-top: 40px;
-                text-align: $centrar;
                 grid-column-start: 2;
                 grid-column-end: 3;
                 grid-row-start: 1;
                 grid-row-end: 2;              
             }
         
+            //Bloque email
             .email {
                 grid-column-start: 3;
                 grid-column-end: 4;
                 grid-row-start: 1;
                 grid-row-end: 2;
                 margin-top: 40px;
-                text-align: $centrar;
-            }
-        }
-    
-        //Pie de Página
-        footer {
-            background-color: $color-footer;
-            border: 1px solid black;
-            p {
-                text-align: $derech;
-                padding-right: 3px;
-                font-size: 14px;
             }
         }
     }

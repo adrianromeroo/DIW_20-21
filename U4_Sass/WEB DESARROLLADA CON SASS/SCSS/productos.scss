@@ -1,72 +1,41 @@
 @import "variables.scss";
+@import "funciones.scss";
+@import "footer.scss";
+@import "menu.scss";
+@import "mixins.scss";
+
+/*
+
+    Web desarrollada por #{$autor}
+
+*/
 
 body {
+    /* Cuerpo del HTML */
     background-color: $bg-color;
-    margin: 0px;
+    @include centrar_bloque;
 }
 
 .container {
+    /* Contenedor Principal */ 
     width: $width;
 
     .banner {
         img {
+            /* Imagen Principal */
             width: $width;
         }
     }
 
-    .menu {
-        background-color: $color-menu;
-        text-align: center;
-        border: black 1px solid;
-
-        ul {
-            padding-left: 0px;
-
-            .li1 {
-                display: inline-block;
-                width: 24%;
-                a {
-                    color: $color-ppa-1;
-                    padding: 1%;
-                }
-            }
-
-            .li2 {
-                display: inline-block;
-                width: 24%;
-                a {
-                    color: $color-ppa-2;
-                    padding: 1%;
-                }
-            }
-
-            .li3 {
-                display: inline-block;
-                width: 24%;
-                a {
-                    color: $color-ppa-3;
-                    padding: 1%;
-                }
-            }
-
-            .li4 {
-                display: inline-block;
-                width: 24%;
-                a {
-                    color: $color-ppa-4;
-                    padding: 1%;
-                }
-            }
-        }
-
-    }
-
     .categoria1 {
+        /* Primera Categoria de Productos */
+        text-align: $centrar;
 
         h2 {
             text-align: $centrar;
         }
 
+        //Categoria 1 Producto 1
         .c1p1 {
             text-align: $centrar;
 
@@ -82,6 +51,7 @@ body {
             }
         }
 
+        //Categoria 1 Producto 2
         .c1p2 {
             text-align: $centrar;
 
@@ -97,6 +67,7 @@ body {
             }
         }
 
+        //Categoria 1 Producto 3
         .c1p3 {
             text-align: $centrar;
 
@@ -112,6 +83,7 @@ body {
             }
         }
 
+        //Categoria 1 Producto 4
         .c1p4 {
             text-align: $centrar;
 
@@ -129,12 +101,14 @@ body {
     }
 
     .categoria2 {
+        /* Segunda Categoria de Productos */
         text-align: $centrar;
 
         h2 {
             text-align: $centrar;
         }
 
+        //Categoria 2 Producto 1
         .c2p1 {
             h3 {
                 margin-bottom: 5%;
@@ -149,6 +123,7 @@ body {
             }
         }
 
+        //Categoria 2 Producto 2
         .c2p2 {
             text-align: $centrar;
             h3 {
@@ -164,6 +139,7 @@ body {
             }
         }
 
+        //Categoria 2 Producto 3
         .c2p3 {
             h3 {
                 margin-bottom: 5%;
@@ -178,6 +154,7 @@ body {
             }
         }
 
+        //Categoria 2 Producto 4
         .c2p4 {
             h3 {
                 margin-bottom: 5%;
@@ -192,32 +169,16 @@ body {
             }
         }
     }
-
-    //Pie de Página
-    footer {
-        background-color: $color-footer;
-        border: 1px solid black;
-        p {
-            text-align: $derech;
-            padding-right: 3px;
-            font-size: 10px;
-        }
-    }
-
-
 }
 
 
 
 
-
-
-
-
-//Breakpoint Tablet
+/* Breakpoint para Tablet */
 @media screen and (min-width: 576px) {
 
     .categoria1 {
+        /* Primera Categoria de Productos */
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 80px 550px 520px;
@@ -231,6 +192,7 @@ body {
             padding-top: 20px;
         }
 
+        //Categoria 1 Producto 1
         .c1p1 {
             grid-column-start: 1;
             grid-column-end: 2;
@@ -246,6 +208,7 @@ body {
 
         }
 
+        //Categoria 1 Producto 2
         .c1p2 {
             grid-column-start: 2;
             grid-column-end: 3;
@@ -261,6 +224,7 @@ body {
             
         }
 
+        //Categoria 1 Producto 3
         .c1p3 {
             grid-column-start: 1;
             grid-column-end: 2;
@@ -275,7 +239,8 @@ body {
             }
             
         }
-
+        
+        //Categoria 1 Producto 4
         .c1p4 {
             grid-column-start: 2;
             grid-column-end: 3;
@@ -293,6 +258,7 @@ body {
     }
 
     .categoria2 {
+        /* Segunda Categoria de Productos */
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 80px 550px 600px;
@@ -306,6 +272,7 @@ body {
             padding-top: 20px;
         }
 
+        //Categoria 2 Producto 1
         .c2p1 {
             grid-column-start: 1;
             grid-column-end: 2;
@@ -314,13 +281,14 @@ body {
 
             img {
                 width: $tamano-img-movil;
-                    display:block;
-                    margin:auto;
-                    border: 1px solid black;
+                display:block;
+                margin:auto;
+                border: 1px solid black;
             }
 
         }
 
+        //Categoria 2 Producto 2
         .c2p2 {
             grid-column-start: 2;
             grid-column-end: 3;
@@ -329,14 +297,15 @@ body {
 
             img {
                 width: $tamano-img-movil;
-                    display:block;
-                    margin:auto;
-                    border: 1px solid black;
+                display:block;
+                margin:auto;
+                border: 1px solid black;
                 
             }
             
         }
 
+        //Categoria 2 Producto 3
         .c2p3 {
             grid-column-start: 1;
             grid-column-end: 2;
@@ -345,13 +314,14 @@ body {
 
             img {
                 width: $tamano-img-movil;
-                    display:block;
-                    margin:auto;
-                    border: 1px solid black;
+                display:block;
+                margin:auto;
+                border: 1px solid black;
             }
             
         }
 
+        //Categoria 2 Producto 4
         .c2p4 {
             grid-column-start: 2;
             grid-column-end: 3;
@@ -360,34 +330,22 @@ body {
 
             img {
                 width: $tamano-img-movil;
-                    display:block;
-                    margin:auto;
-                    border: 1px solid black;
+                display:block;
+                margin:auto;
+                border: 1px solid black;
             }
             
-        }
-    }
-
-    //Pie de Página
-    footer {
-        background-color: $color-footer;
-        border: 1px solid black;
-        p {
-            text-align: $derech;
-            padding-right: 3px;
-            font-size: 12px;
         }
     }
 }
 
 
 
-
-
-//Breakpoint Pantalla
+/* Breakpoint para Pantalla */
 @media screen and (min-width: 992px) { 
 
     .categoria1 {
+        /* Primera Categoria de Productos */
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         grid-template-rows: 80px 370px;
@@ -401,6 +359,7 @@ body {
             padding-top: 20px;
         }
 
+        //Categoria 1 Producto 1
         .c1p1 {
             grid-column-start: 1;
             grid-column-end: 2;
@@ -416,6 +375,7 @@ body {
 
         }
 
+        //Categoria 1 Producto 2
         .c1p2 {
             grid-column-start: 2;
             grid-column-end: 3;
@@ -431,6 +391,7 @@ body {
             
         }
 
+        //Categoria 1 Producto 3
         .c1p3 {
             grid-column-start: 3;
             grid-column-end: 4;
@@ -446,6 +407,7 @@ body {
             
         }
 
+        //Categoria 1 Producto 4
         .c1p4 {
             grid-column-start: 4;
             grid-column-end: 5;
@@ -465,6 +427,7 @@ body {
 
 
     .categoria2 {
+        /* Segunda Categoria de Productos */
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         grid-template-rows: 80px 400px;
@@ -478,6 +441,7 @@ body {
             padding-top: 20px;
         }
 
+        //Categoria 2 Producto 1
         .c2p1 {
             grid-column-start: 1;
             grid-column-end: 2;
@@ -493,6 +457,7 @@ body {
 
         }
 
+        //Categoria 2 Producto 2
         .c2p2 {
             grid-column-start: 2;
             grid-column-end: 3;
@@ -508,6 +473,7 @@ body {
             
         }
 
+        //Categoria 2 Producto 3
         .c2p3 {
             grid-column-start: 3;
             grid-column-end: 4;
@@ -523,6 +489,7 @@ body {
             
         }
 
+        //Categoria 2 Producto 4
         .c2p4 {
             grid-column-start: 4;
             grid-column-end: 5;
@@ -538,16 +505,4 @@ body {
             
         }
     }
-
-    //Pie de Página
-    footer {
-        background-color: $color-footer;
-        border: 1px solid black;
-        p {
-            text-align: $derech;
-            padding-right: 3px;
-            font-size: 14px;
-        }
-    }
-
 }
