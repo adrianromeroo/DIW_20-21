@@ -1,0 +1,158 @@
+body {
+  background-color: #72c5b4;
+  margin: 0px;
+}
+
+.container {
+  width: 100%;
+}
+.container .banner img {
+  width: 100%;
+}
+.container .menu {
+  background-color: #16A085;
+  text-align: center;
+  border: black 1px solid;
+}
+.container .menu ul {
+  padding-left: 0px;
+}
+.container .menu ul .li1 {
+  display: inline-block;
+  width: 24%;
+}
+.container .menu ul .li1 a {
+  color: white;
+  padding: 1%;
+}
+.container .menu ul .li2 {
+  display: inline-block;
+  width: 24%;
+}
+.container .menu ul .li2 a {
+  color: #e7066f;
+  padding: 1%;
+}
+.container .menu ul .li3 {
+  display: inline-block;
+  width: 24%;
+}
+.container .menu ul .li3 a {
+  color: #165fce;
+  padding: 1%;
+}
+.container .menu ul .li4 {
+  display: inline-block;
+  width: 24%;
+}
+.container .menu ul .li4 a {
+  color: yellow;
+  padding: 1%;
+}
+.container .categoria1 h2 {
+  text-align: center;
+}
+.container .categoria1 .c1p1 {
+  text-align: center;
+}
+.container .categoria1 .c1p1 h4 {
+  margin-bottom: 8%;
+}
+.container .categoria1 .c1p1 img {
+  width: 75%;
+  display: block;
+  margin: auto;
+  border: 1px solid black;
+}
+.container .categoria1 .c1p2 {
+  text-align: center;
+}
+.container .categoria1 .c1p2 h4 {
+  margin-bottom: 8%;
+}
+.container .categoria1 .c1p2 img {
+  width: 75%;
+  display: block;
+  margin: auto;
+  border: 1px solid black;
+}
+.container .categoria1 .c1p3 {
+  text-align: center;
+}
+.container .categoria1 .c1p3 h4 {
+  margin-bottom: 8%;
+}
+.container .categoria1 .c1p3 img {
+  width: 75%;
+  display: block;
+  margin: auto;
+  border: 1px solid black;
+}
+.container .categoria1 .c1p4 {
+  text-align: center;
+}
+.container .categoria1 .c1p4 h4 {
+  margin-bottom: 8%;
+}
+.container .categoria1 .c1p4 img {
+  width: 75%;
+  display: block;
+  margin: auto;
+  border: 1px solid black;
+}
+.container .categoria2 {
+  text-align: center;
+}
+.container .categoria2 h2 {
+  text-align: center;
+}
+.container .categoria2 .c2p1 h4 {
+  text-align: center;
+}
+.container .categoria2 .c2p1 img {
+  width: 75%;
+  display: block;
+  margin: auto;
+  border: 1px solid black;
+}
+.container .categoria2 .c2p2 {
+  text-align: center;
+}
+.container .categoria2 .c2p2 h4 {
+  text-align: center;
+}
+.container .categoria2 .c2p2 img {
+  width: 75%;
+  display: block;
+  margin: auto;
+  border: 1px solid black;
+}
+.container .categoria2 .c2p3 h4 {
+  text-align: center;
+}
+.container .categoria2 .c2p3 img {
+  width: 75%;
+  display: block;
+  margin: auto;
+  border: 1px solid black;
+}
+.container .categoria2 .c2p4 h4 {
+  text-align: center;
+}
+.container .categoria2 .c2p4 img {
+  width: 75%;
+  display: block;
+  margin: auto;
+  border: 1px solid black;
+}
+.container footer {
+  background-color: #16A085;
+  border: 1px solid black;
+}
+.container footer p {
+  text-align: right;
+  padding-right: 3px;
+  font-size: 2.5vw;
+}
+
+/*# sourceMappingURL=productos.css.map */

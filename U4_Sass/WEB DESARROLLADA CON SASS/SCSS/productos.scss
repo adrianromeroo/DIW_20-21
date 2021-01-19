@@ -1,0 +1,241 @@
+@import "variables.scss";
+
+body {
+    background-color: $bg-color;
+    margin: 0px;
+}
+
+.container {
+    width: $width;
+
+    .banner {
+        img {
+            width: $width;
+        }
+    }
+
+    .menu {
+        background-color: $color-menu;
+        text-align: center;
+        border: black 1px solid;
+
+        ul {
+            padding-left: 0px;
+
+            .li1 {
+                display: inline-block;
+                width: 24%;
+                a {
+                    color: $color-ppa-1;
+                    padding: 1%;
+                }
+            }
+
+            .li2 {
+                display: inline-block;
+                width: 24%;
+                a {
+                    color: $color-ppa-2;
+                    padding: 1%;
+                }
+            }
+
+            .li3 {
+                display: inline-block;
+                width: 24%;
+                a {
+                    color: $color-ppa-3;
+                    padding: 1%;
+                }
+            }
+
+            .li4 {
+                display: inline-block;
+                width: 24%;
+                a {
+                    color: $color-ppa-4;
+                    padding: 1%;
+                }
+            }
+        }
+
+    }
+
+    .categoria1 {
+
+        h2 {
+            text-align: $centrar;
+        }
+
+        .c1p1 {
+            text-align: $centrar;
+
+            h4 {
+                margin-bottom: 8%;
+            }
+
+            p {
+
+            }
+
+            img {
+                width: $tamano-img-movil;
+                display:block;
+                margin:auto;
+                border: 1px solid black;
+            }
+        }
+
+        .c1p2 {
+            text-align: $centrar;
+
+            h4 {
+                margin-bottom: 8%;
+            }
+
+            p {
+
+            }
+
+            img {
+                width: $tamano-img-movil;
+                display:block;
+                margin:auto;
+                border: 1px solid black;
+            }
+        }
+
+        .c1p3 {
+            text-align: $centrar;
+
+            h4 {
+                margin-bottom: 8%;
+            }
+
+            p {
+
+            }
+
+            img {
+                width: $tamano-img-movil;
+                display:block;
+                margin:auto;
+                border: 1px solid black;
+            }
+        }
+
+        .c1p4 {
+            text-align: $centrar;
+
+            h4 {
+                margin-bottom: 8%;
+            }
+
+            p {
+
+            }
+
+            img {
+                width: $tamano-img-movil;
+                display:block;
+                margin:auto;
+                border: 1px solid black;
+            }
+        }
+    }
+
+    .categoria2 {
+        text-align: $centrar;
+
+        h2 {
+            text-align: $centrar;
+        }
+
+        .c2p1 {
+            h4 {
+                text-align: $centrar;
+            }
+
+            p {
+
+            }
+
+            img {
+                width: $tamano-img-movil;
+                display:block;
+                margin:auto;
+                border: 1px solid black;
+            }
+        }
+
+        .c2p2 {
+            text-align: $centrar;
+            h4 {
+                text-align: $centrar;
+            }
+
+            p {
+
+            }
+
+            img {
+                width: $tamano-img-movil;
+                display:block;
+                margin:auto;
+                border: 1px solid black;
+            }
+        }
+
+        .c2p3 {
+            h4 {
+                text-align: $centrar;
+            }
+
+            p {
+
+            }
+
+            img {
+                width: $tamano-img-movil;
+                display:block;
+                margin:auto;
+                border: 1px solid black;
+            }
+        }
+
+        .c2p4 {
+            h4 {
+                text-align: $centrar;
+            }
+
+            p {
+
+            }
+
+            img {
+                width: $tamano-img-movil;
+                display:block;
+                margin:auto;
+                border: 1px solid black;
+            }
+        }
+    }
+
+    //Pie de Página
+    footer {
+        background-color: $color-footer;
+        border: 1px solid black;
+        p {
+            text-align: $derech;
+            padding-right: 3px;
+            font-size: 2.5vw;
+        }
+    }
+
+
+}
+
+//Breakpoint Tablet
+@media screen and (min-width: 576px) {
+
+}

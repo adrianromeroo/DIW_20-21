@@ -50,42 +50,42 @@ body {
         ul {
             padding-left: 0px;
 
-            li {
+            .li1 {
                 display: inline-block;
                 width: 24%;
 
                 a {
-                    color: black;
+                    color: $color-ppa-1;
                     padding: 1%;
                 }
             }
 
-            li {
+            .li2 {
                 display: inline-block;
                 width: 24%;
 
                 a {
-                    color: black;
+                    color: $color-ppa-2;
                     padding: 1%;
                 }
             }
 
-            li {
+            .li3 {
                 display: inline-block;
                 width: 24%;
 
                 a {
-                    color: black;
+                    color: $color-ppa-3;
                     padding: 1%;
                 }
             }
 
-            li {
+            .li4 {
                 display: inline-block;
                 width: 24%;
 
                 a {
-                    color: black;
+                    color: $color-ppa-4;
                     padding: 1%;
                 }
             }
@@ -169,34 +169,62 @@ body {
             text-align: $centrar;
         }
 
-        div {
+        .entorno1 {
 
             img {
+                width: $tamano-img-movil;
+                display:block;
+                margin:auto;
+                border: 1px solid black;
+            }
 
+            h3 {
+                margin-bottom: 8%;
             }
 
         }
 
-        div {
+        .entorno2 {
 
             img {
+                width: $tamano-img-movil;
+                display:block;
+                margin:auto;
+                border: 1px solid black;
+            }
 
+            h3 {
+                margin-bottom: 8%;
             }
             
         }
 
-        div {
+        .entorno3 {
 
             img {
+                width: $tamano-img-movil;
+                display:block;
+                margin:auto;
+                border: 1px solid black;
+            }
 
+            h3 {
+                margin-bottom: 8%;
             }
             
         }
 
-        div {
+        .entorno4 {
 
             img {
+                width: $tamano-img-movil;
+                display:block;
+                margin:auto;
+                border: 1px solid black;
+            }
 
+            h3 {
+                margin-bottom: 8%;
             }
             
         }
@@ -223,7 +251,7 @@ body {
             text-align: $centrar;
         }
 
-        div {
+        .grid {
 
             div {
 
@@ -298,67 +326,6 @@ body {
                 font-size: 2vw;
             }
     
-        }
-    
-        //Imagen Principal
-        .banner {
-    
-            img {
-                width: $width;
-            }
-    
-        }
-    
-        //Menú
-        .menu {
-            background-color: $color-menu;
-            text-align: center;
-            border: black 1px solid;
-    
-            ul {
-                padding-left: 0px;
-    
-                li {
-                    display: inline-block;
-                    width: 24%;
-    
-                    a {
-                        color: black;
-                        padding: 1%;
-                    }
-                }
-    
-                li {
-                    display: inline-block;
-                    width: 24%;
-    
-                    a {
-                        color: black;
-                        padding: 1%;
-                    }
-                }
-    
-                li {
-                    display: inline-block;
-                    width: 24%;
-    
-                    a {
-                        color: black;
-                        padding: 1%;
-                    }
-                }
-    
-                li {
-                    display: inline-block;
-                    width: 24%;
-    
-                    a {
-                        color: black;
-                        padding: 1%;
-                    }
-                }
-    
-            }
         }
     
         //Seccion de Servicios
@@ -461,42 +428,245 @@ body {
             }
         }
     
-        //Seccion de Entorno de Trabajo
-        .entorno {
-            display: none;
+        //Pie de Página
+        footer {
+            background-color: $color-footer;
+            border: 1px solid black;
+            p {
+                text-align: $derech;
+                padding-right: 3px;
+                font-size: 2vw;
+            }
+        }
+    }
+
+}
+
+
+
+//Breakpoint Tablet
+@media screen and (min-width: 992px) {
+
+    .container {
+        width: calcularAnchura($ordenador);
+        
+        //Cabecera
+        .cabecera {
+            display: flex;
+            border: 1px solid black;
+            background-color: $color-header;
+            .p1 {
+                padding-left: 3px;
+                font-size: 1.5vw;
+            }
+    
+            .p2 {
+                padding-left: 20px;
+                font-size: 1.5vw;
+            }
+    
+            .p3 {
+                padding-left: 490px;
+                font-size: 1.5vw;
+            }
+    
+        }
+    
+        //Seccion de Servicios
+        .servicios {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 80px 225px;
     
             h3 {
                 text-align: $centrar;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                padding-top: 20px;
             }
     
-            div {
+            .acabado {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 3;
     
                 img {
+                    width: $tamano-img-movil;
+                    display:block;
+                    margin:auto;
+                    border: 1px solid black;
+                    height: 166.5px;
+                }
     
+                h3{
+                    margin-bottom: 8%;
+                    padding-top: 0px;
                 }
     
             }
     
-            div {
+            .impresion {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
     
                 img {
+                    width: $tamano-img-movil;
+                    display:block;
+                    margin:auto;
+                    border: 1px solid black;
+                    height: 166.5px;
+                }
     
+                h3{
+                    margin-bottom: 8%;
+                    padding-top: 0px;
                 }
                 
             }
     
-            div {
+            .manipulado {
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row-start: 2;
+                grid-row-end: 3;
     
                 img {
+                    width: $tamano-img-movil;
+                    display:block;
+                    margin:auto;
+                    border: 1px solid black;
+                    height: 166.5px;
+                }
     
+                h3{
+                    margin-bottom: 8%;
+                    padding-top: 0px;
                 }
                 
             }
     
-            div {
+            .preimpresion {
+                grid-column-start: 4;
+                grid-column-end: 5;
+                grid-row-start: 2;
+                grid-row-end: 3;
     
                 img {
+                    width: $tamano-img-movil;
+                    display:block;
+                    margin:auto;
+                    border: 1px solid black;
+                    height: 166.5px;
+                }
     
+                h3{
+                    margin-bottom: 15%;
+                    padding-top: 0px;
+                }
+                
+            }
+        }
+    
+        //Seccion de Entorno de Trabajo
+        .entorno {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 80px 225px;
+    
+            h3 {
+                text-align: $centrar;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                padding-top: 20px;
+            }
+    
+            .entorno1 {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 3;
+    
+                img {
+                    width: $tamano-img-movil;
+                    display:block;
+                    margin:auto;
+                    border: 1px solid black;
+                    height: 166.5px;
+                }
+    
+                h3{
+                    margin-bottom: 8%;
+                    padding-top: 0px;
+                }
+    
+            }
+    
+            .entorno2 {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+    
+                img {
+                    width: $tamano-img-movil;
+                    display:block;
+                    margin:auto;
+                    border: 1px solid black;
+                    height: 166.5px;
+                }
+    
+                h3{
+                    margin-bottom: 8%;
+                    padding-top: 0px;
+                }
+                
+            }
+    
+            .entorno3 {
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row-start: 2;
+                grid-row-end: 3;
+    
+                img {
+                    width: $tamano-img-movil;
+                    display:block;
+                    margin:auto;
+                    border: 1px solid black;
+                    height: 166.5px;
+                }
+    
+                h3{
+                    margin-bottom: 8%;
+                    padding-top: 0px;
+                }
+                
+            }
+    
+            .entorno4 {
+                grid-column-start: 4;
+                grid-column-end: 5;
+                grid-row-start: 2;
+                grid-row-end: 3;
+    
+                img {
+                    width: $tamano-img-movil;
+                    display:block;
+                    margin:auto;
+                    border: 1px solid black;
+                    height: 166.5px;
+                }
+    
+                h3{
+                    margin-bottom: 15%;
+                    padding-top: 0px;
                 }
                 
             }
@@ -504,8 +674,12 @@ body {
     
         //Seccion Nosotros
         .nosotros {
+            display: block;
+            margin: auto;
+            width: 80%;
     
             h3 {
+                padding-top: 10px;
                 text-align: $centrar;
             }
     
@@ -521,33 +695,51 @@ body {
     
             h3 {
                 text-align: $centrar;
+                padding-top: 50px;
             }
     
-            div {
+            .grid {
+                display: grid;
+                grid-template-columns: 30% 40% 30%;
+                grid-template-rows: 500px;
     
-                div {
+                .grid1 {
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                    grid-row-start: 1;
+                    grid-row-end: 2;
     
                     p {
-                        text-align: $centrar;
+                        text-align: justify;
                         margin-left: 30px;
                         margin-right: 30px;
                     }
                 }
                 
     
-                div {
+                .grid2 {
+                    width: $width;
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                    grid-row-start: 1;
+                    grid-row-end: 2;
     
                     img {
+                        width: $width;
                         display:block;
                         margin:auto;
                         border: 1px solid black;
                     }
                 }
     
-                div {
+                .grid3 {
+                    grid-column-start: 3;
+                    grid-column-end: 4;
+                    grid-row-start: 1;
+                    grid-row-end: 2;
     
                     p {
-                        text-align: $centrar;
+                        text-align: justify;
                         margin-left: 30px;
                         margin-right: 30px;
                     }
@@ -562,7 +754,7 @@ body {
             p {
                 text-align: $derech;
                 padding-right: 3px;
-                font-size: 2vw;
+                font-size: 1vw;
             }
         }
     }
