@@ -1,0 +1,291 @@
+@import "variables.scss";
+
+body {
+    background-color: $bg-color;
+    margin: 0px;
+}
+
+.container {
+    width: $width;
+
+    .banner {
+        img {
+            width: $width;
+        }
+    }
+
+    .menu {
+        background-color: $color-menu;
+        text-align: center;
+        border: black 1px solid;
+
+        ul {
+            padding-left: 0px;
+
+            .li1 {
+                display: inline-block;
+                width: 24%;
+                a {
+                    color: $color-ppa-1;
+                    padding: 1%;
+                }
+            }
+
+            .li2 {
+                display: inline-block;
+                width: 24%;
+                a {
+                    color: $color-ppa-2;
+                    padding: 1%;
+                }
+            }
+
+            .li3 {
+                display: inline-block;
+                width: 24%;
+                a {
+                    color: $color-ppa-3;
+                    padding: 1%;
+                }
+            }
+
+            .li4 {
+                display: inline-block;
+                width: 24%;
+                a {
+                    color: $color-ppa-4;
+                    padding: 1%;
+                }
+            }
+        }
+
+    }
+
+    .iframe {
+        width: $width;
+    }
+
+    .grid {
+        .direccion {
+            margin-top: 10px;
+            text-align: $centrar;
+            h4 {
+    
+            }
+            p {
+    
+            }
+            p {
+    
+            }
+            p {
+    
+            }
+        }
+    
+        .telefono {
+            margin-top: 40px;
+            text-align: $centrar;
+            h4 {
+    
+            }
+            p {
+    
+            }
+            p {
+    
+            }
+        }
+    
+        .email {
+            margin-top: 40px;
+            text-align: $centrar;
+            h4 {
+    
+            }
+            p {
+    
+            }
+        }
+    }
+
+    //Pie de Página
+    footer {
+        background-color: $color-footer;
+        border: 1px solid black;
+        p {
+            text-align: $derech;
+            padding-right: 3px;
+            font-size: 10px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+//Breakpoint Tablet
+@media screen and (min-width: 576px) {
+    .container {
+        width: $width;
+    
+        .grid {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 300px 250px;
+            .direccion {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                margin-top: 40px;
+                text-align: $centrar;
+            }
+        
+            .telefono {
+                margin-top: 40px;
+                text-align: $centrar;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;              
+            }
+        
+            .email {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                margin-top: 20px;
+                text-align: $centrar;
+            }
+        }
+    
+        //Pie de Página
+        footer {
+            background-color: $color-footer;
+            border: 1px solid black;
+            p {
+                text-align: $derech;
+                padding-right: 3px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+//Breakpoint Ordenador
+@media screen and (min-width: 992px) {
+    .container {
+        width: $width;
+    
+        .banner {
+            img {
+                width: $width;
+            }
+        }
+    
+        .menu {
+            background-color: $color-menu;
+            text-align: center;
+            border: black 1px solid;
+    
+            ul {
+                padding-left: 0px;
+    
+                .li1 {
+                    display: inline-block;
+                    width: 24%;
+                    a {
+                        color: $color-ppa-1;
+                        padding: 1%;
+                    }
+                }
+    
+                .li2 {
+                    display: inline-block;
+                    width: 24%;
+                    a {
+                        color: $color-ppa-2;
+                        padding: 1%;
+                    }
+                }
+    
+                .li3 {
+                    display: inline-block;
+                    width: 24%;
+                    a {
+                        color: $color-ppa-3;
+                        padding: 1%;
+                    }
+                }
+    
+                .li4 {
+                    display: inline-block;
+                    width: 24%;
+                    a {
+                        color: $color-ppa-4;
+                        padding: 1%;
+                    }
+                }
+            }
+    
+        }
+    
+        .iframe {
+            width: $width;
+        }
+    
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 33%);
+            grid-template-rows: 300px;
+            .direccion {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                margin-top: 40px;
+                text-align: $centrar;
+            }
+        
+            .telefono {
+                margin-top: 40px;
+                text-align: $centrar;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;              
+            }
+        
+            .email {
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                margin-top: 40px;
+                text-align: $centrar;
+            }
+        }
+    
+        //Pie de Página
+        footer {
+            background-color: $color-footer;
+            border: 1px solid black;
+            p {
+                text-align: $derech;
+                padding-right: 3px;
+                font-size: 14px;
+            }
+        }
+    }
+}

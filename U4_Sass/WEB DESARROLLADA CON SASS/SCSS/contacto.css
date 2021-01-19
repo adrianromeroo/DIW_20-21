@@ -1,0 +1,210 @@
+body {
+  background-color: #72c5b4;
+  margin: 0px;
+}
+
+.container {
+  width: 100%;
+}
+.container .banner img {
+  width: 100%;
+}
+.container .menu {
+  background-color: #16A085;
+  text-align: center;
+  border: black 1px solid;
+}
+.container .menu ul {
+  padding-left: 0px;
+}
+.container .menu ul .li1 {
+  display: inline-block;
+  width: 24%;
+}
+.container .menu ul .li1 a {
+  color: white;
+  padding: 1%;
+}
+.container .menu ul .li2 {
+  display: inline-block;
+  width: 24%;
+}
+.container .menu ul .li2 a {
+  color: #e7066f;
+  padding: 1%;
+}
+.container .menu ul .li3 {
+  display: inline-block;
+  width: 24%;
+}
+.container .menu ul .li3 a {
+  color: #165fce;
+  padding: 1%;
+}
+.container .menu ul .li4 {
+  display: inline-block;
+  width: 24%;
+}
+.container .menu ul .li4 a {
+  color: yellow;
+  padding: 1%;
+}
+.container .iframe {
+  width: 100%;
+}
+.container .grid .direccion {
+  margin-top: 10px;
+  text-align: center;
+}
+.container .grid .telefono {
+  margin-top: 40px;
+  text-align: center;
+}
+.container .grid .email {
+  margin-top: 40px;
+  text-align: center;
+}
+.container footer {
+  background-color: #16A085;
+  border: 1px solid black;
+}
+.container footer p {
+  text-align: right;
+  padding-right: 3px;
+  font-size: 10px;
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    width: 100%;
+  }
+  .container .grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 300px 250px;
+  }
+  .container .grid .direccion {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: 40px;
+    text-align: center;
+  }
+  .container .grid .telefono {
+    margin-top: 40px;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .container .grid .email {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .container footer {
+    background-color: #16A085;
+    border: 1px solid black;
+  }
+  .container footer p {
+    text-align: right;
+    padding-right: 3px;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .container .banner img {
+    width: 100%;
+  }
+  .container .menu {
+    background-color: #16A085;
+    text-align: center;
+    border: black 1px solid;
+  }
+  .container .menu ul {
+    padding-left: 0px;
+  }
+  .container .menu ul .li1 {
+    display: inline-block;
+    width: 24%;
+  }
+  .container .menu ul .li1 a {
+    color: white;
+    padding: 1%;
+  }
+  .container .menu ul .li2 {
+    display: inline-block;
+    width: 24%;
+  }
+  .container .menu ul .li2 a {
+    color: #e7066f;
+    padding: 1%;
+  }
+  .container .menu ul .li3 {
+    display: inline-block;
+    width: 24%;
+  }
+  .container .menu ul .li3 a {
+    color: #165fce;
+    padding: 1%;
+  }
+  .container .menu ul .li4 {
+    display: inline-block;
+    width: 24%;
+  }
+  .container .menu ul .li4 a {
+    color: yellow;
+    padding: 1%;
+  }
+  .container .iframe {
+    width: 100%;
+  }
+  .container .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 300px;
+  }
+  .container .grid .direccion {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: 40px;
+    text-align: center;
+  }
+  .container .grid .telefono {
+    margin-top: 40px;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .container .grid .email {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: 40px;
+    text-align: center;
+  }
+  .container footer {
+    background-color: #16A085;
+    border: 1px solid black;
+  }
+  .container footer p {
+    text-align: right;
+    padding-right: 3px;
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=contacto.css.map */

@@ -8,20 +8,20 @@ body {
 }
 .container .cabecera {
   display: flex;
+  justify-content: space-between;
   border: 1px solid black;
   background-color: #16A085;
 }
 .container .cabecera .p1 {
-  padding-left: 3px;
-  font-size: 2.5vw;
+  font-size: 11px;
+  padding-left: 5px;
 }
 .container .cabecera .p2 {
-  padding-left: 10px;
-  font-size: 2.5vw;
+  font-size: 11px;
 }
 .container .cabecera .p3 {
-  font-size: 2.5vw;
-  padding-left: 75px;
+  font-size: 11px;
+  padding-right: 5px;
 }
 .container .banner img {
   width: 100%;
@@ -180,7 +180,7 @@ body {
 .container footer p {
   text-align: right;
   padding-right: 3px;
-  font-size: 2.5vw;
+  font-size: 11px;
 }
 
 @media screen and (min-width: 576px) {
@@ -189,20 +189,20 @@ body {
   }
   .container .cabecera {
     display: flex;
+    justify-content: space-between;
     border: 1px solid black;
     background-color: #16A085;
   }
   .container .cabecera .p1 {
-    padding-left: 3px;
-    font-size: 2vw;
+    font-size: 13px;
+    padding-left: 5px;
   }
   .container .cabecera .p2 {
-    padding-left: 10px;
-    font-size: 2vw;
+    font-size: 13px;
   }
   .container .cabecera .p3 {
-    padding-left: 200px;
-    font-size: 2vw;
+    font-size: 13px;
+    padding-right: 5px;
   }
   .container .servicios {
     display: grid;
@@ -292,7 +292,7 @@ body {
   .container footer p {
     text-align: right;
     padding-right: 3px;
-    font-size: 2vw;
+    font-size: 13px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -301,20 +301,20 @@ body {
   }
   .container .cabecera {
     display: flex;
+    justify-content: space-between;
     border: 1px solid black;
     background-color: #16A085;
   }
   .container .cabecera .p1 {
-    padding-left: 3px;
-    font-size: 1.5vw;
+    font-size: 15px;
+    padding-left: 5px;
   }
   .container .cabecera .p2 {
-    padding-left: 20px;
-    font-size: 1.5vw;
+    font-size: 15px;
   }
   .container .cabecera .p3 {
-    padding-left: 490px;
-    font-size: 1.5vw;
+    font-size: 15px;
+    padding-right: 5px;
   }
   .container .servicios {
     display: grid;
@@ -499,7 +499,7 @@ body {
   .container .historia .grid {
     display: grid;
     grid-template-columns: 30% 40% 30%;
-    grid-template-rows: 500px;
+    grid-template-rows: 400px;
   }
   .container .historia .grid .grid1 {
     grid-column-start: 1;
@@ -509,8 +509,8 @@ body {
   }
   .container .historia .grid .grid1 p {
     text-align: justify;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
   .container .historia .grid .grid2 {
     width: 100%;
@@ -520,7 +520,7 @@ body {
     grid-row-end: 2;
   }
   .container .historia .grid .grid2 img {
-    width: 100%;
+    width: 60%;
     display: block;
     margin: auto;
     border: 1px solid black;
@@ -533,8 +533,8 @@ body {
   }
   .container .historia .grid .grid3 p {
     text-align: justify;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
   .container footer {
     background-color: #16A085;
@@ -543,7 +543,7 @@ body {
   .container footer p {
     text-align: right;
     padding-right: 3px;
-    font-size: 1vw;
+    font-size: 15px;
   }
 }
 
